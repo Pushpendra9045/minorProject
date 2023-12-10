@@ -1,0 +1,20 @@
+.displayed-table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  .displayed-table td, .displayed-table th {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+  .displayed-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.displayed-table tr:hover {background-color: #ddd;}
+.displayed-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7743DB;
+    color: white;
+  }

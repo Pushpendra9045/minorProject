@@ -1,0 +1,126 @@
+.profile-page{
+    border: 2px solid red;
+    width: 100%;
+   
+    margin-top: 100px;
+}
+.profile-header{
+    width: 90%;
+    
+    margin: 20px auto;
+}
+.profile-image-container{
+   
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 0px auto;
+    
+}
+.profile-image{
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-default-body{
+   
+    width: 90%;
+    margin: 10px auto;
+}
+
+.profile-added-body{
+    
+    width: 90%;
+    margin: -5px auto;
+   
+    
+}
+
+.first-row{
+   
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 10px;
+}
+.addtional-row{
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    gap: 10px;
+}
+.name, .lastname, .username, .password {
+    font-size: 25px;
+    text-align: justify;
+}
+.profile-input-more{
+    width: 100%;
+   
+}
+
+.update-profile-btn{
+   padding: 10px;
+   width: 70%;
+   font-size: 20px;
+   border: 2px solid #3D30A2;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.profile-footer{
+   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .profile-footer{
+        width: 20%;
+       }
+       .update-profile-btn{
+        width: 100%;
+       }
+}
+@media screen and (max-width:767px) {
+    .first-row{
+        justify-content: space-between;
+    }
+    .profile-footer{
+        width: 38%;
+       }
+       .update-profile-btn{
+        width: 100%;
+       }
+}
+
+@media screen and (max-width:420px) {
+    .profile-default-body{
+        width: 100%;
+    }
+    .profile-added-body{
+        width: 100%;
+    }
+    .first-row{
+        justify-content: space-between;
+    }
+    .name, .lastname, .username, .password {
+        font-size: 16px;
+        font-weight: 700;
+       
+    }
+   .profile-footer{
+    width: 50%;
+   }
+   .update-profile-btn{
+    width: 100%;
+   }
+}

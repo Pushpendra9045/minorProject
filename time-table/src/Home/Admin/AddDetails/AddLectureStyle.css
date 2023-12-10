@@ -1,0 +1,53 @@
+.Add-Lecture-section {
+    width: 80%;
+    margin-left: auto;
+    padding-top: 110px;
+  }
+  .Lecture-section-heading-container{
+    border: 2px solid #7743DB;
+    margin-bottom: 12px;
+    background-color: #7743DB;
+  }
+  .lecture-heading{
+    padding: 10px;
+    color: white;
+  }
+  .lecture-container {
+   
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    padding: 10px;
+    gap: 1.02rem;
+  }
+  
+  .add-lecture-item {
+    /* You can add specific styling for the items if needed */
+   
+  }
+  
+  .add-lecture-item.lecture-item-1 {
+    width: 350px;
+  }
+  
+  /* Media query for tablet */
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+    .lecture-container {
+      grid-template-columns: 1fr; /* Single column layout for tablet screens */
+    }
+  
+    .add-lecture-item.lecture-item-1 {
+      width: 100%; /* Full width for the first item on tablet screens */
+    }
+  }
+
+  @media screen and (max-width: 768px)  {
+    .lecture-container {
+      grid-template-columns: 1fr; /* Single column layout for tablet screens */
+    }
+  
+    .add-lecture-item.lecture-item-1 {
+      width: 100%; /* Full width for the first item on tablet screens */
+    }
+  }
+  
+  
